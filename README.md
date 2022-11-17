@@ -10,4 +10,4 @@
 
 ## Desenvolvido por
 
-- Samuel Carneiro [GitHub] (https://github.com/samuelcarneiro)
+- Samuel Carneiro [GitHub](https://github.com/samuelcarneiro)
