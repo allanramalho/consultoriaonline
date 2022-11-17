@@ -1,6 +1,6 @@
-# Allan Ramalho Consultoria Online
+# Allan Ramalho - Consultoria Online
 
-[clique aqui para acessar](https://allanramalho.github.io/consultoriaonline/)
+[Clique aqui para acessar meu site](https://allanramalho.github.io/consultoriaonline/)
 
 ## Tecnologias
 
@@ -10,4 +10,4 @@
 
 ## Desenvolvido por
 
-- Samuel Carneiro [GitHub](https://github.com/samuelcarneiro)
+- Samuel Carneiro [ [Meu GitHub](https://github.com/samuelcarneiro) ]
