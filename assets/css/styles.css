@@ -1,0 +1,604 @@
+:root {
+    --black: #000000;
+    --white: #FFFFFF;
+
+    --gray-100: #E1E1E6;
+    --gray-200: #C4C4CC;
+    --gray-400: #7C7C8A;
+    --gray-600: #202024;
+    --gray-900: #121214;
+
+    --yellow-500: #F0BD05;
+    --yellow-400: #F5DD88;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+h2 {
+    font-size: 26px;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+
+header {
+    background: url('../img/pexels-musculacao.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 30em;
+    border-bottom: 4px solid var(--yellow-500);
+}
+
+.header-content {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 10px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: var(--gray-100);
+}
+
+.header-content h1 {
+    background-image: linear-gradient(to right, var(--gray-200) 50%, var(--gray-400) 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: var(--black);
+    text-transform: uppercase;
+}
+
+.header-content h1:hover {
+    background-image: linear-gradient(to right, var(--gray-400) 50%, var(--gray-200) 90%);
+}
+
+.header-content a {
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 1em;
+    color: var(--gray-100);
+    cursor: pointer;
+}
+
+.header-content a:hover {
+    color: var(--yellow-500);
+    transition: color .7s ease;
+}
+
+.header-content-chamada {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 15px 15px 30px 15px;
+    border-radius: 10px 10px 90px 10px;
+    position: absolute;
+    top: 8em;
+    left: 10%;
+
+    background-color: rgba(0, 0, 0, .4);
+    color: var(--gray-200);
+}
+
+.header-content-chamada h2 {
+    color: var(--gray-100);
+    font-weight: bolder;
+    font-size: 38px;
+    margin-bottom: .7em;
+}
+
+.header-content-chamada p {
+    font-size: 26px;
+    margin-bottom: 1.7em;
+}
+
+.header-content-chamada a {
+    text-decoration: none;
+    background-color: var(--yellow-500);
+    color: var(--gray-900);
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.header-content-chamada a:hover {
+    background-color: var(--yellow-400);
+}
+
+.section-default {
+    display: flex;
+    justify-content: center;
+    max-width: 80%;
+    margin: 2em auto 0 auto;
+    padding: 10px 0;
+    border-radius: 4px;
+}
+
+
+.list-cards {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 176px);
+    grid-gap: 1.5em;
+}
+
+.card {
+    background-color: var(--gray-600);
+    border-radius: .5em;
+    box-shadow: .1em .1em .3em rgba(0, 0, 0, .45);
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+.card svg {
+    width: 100%;
+}
+
+.card h3 {
+    text-align: center;
+    color: var(--yellow-500);
+    font-size: 18px;
+    margin-top: .5em;
+}
+
+.section-info {
+    display: flex;
+    align-items: center;
+    background: url('../img/pexels-mulher-musculacao.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+    border-bottom: 4px solid var(--yellow-500);
+    margin-top: 2em;
+}
+
+.section-info-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80%;
+    margin: 0 auto;
+
+    font-size: 20px;
+
+    color: var(--gray-100);
+}
+
+.section-info-content ul {
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: 1em;
+    width: 100%;
+    line-height: 2em;
+    font-size: 24px;
+    list-style: none;
+}
+
+.section-info-content ul li {
+    color: var(--gray-100);
+    margin-left: 1em;
+    display: flex;
+    align-items: center;
+}
+
+.section-info-content ul li svg {
+    width: 1.5em;
+    margin-right: .5em;
+}
+
+.section-info-content p {
+    background-color: rgba(0, 0, 0, .45);
+    width: 100%;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 0;
+
+    font-size: 24px;
+    line-height: 1.5em;
+}
+
+.section-treinos {
+    max-width: 80%;
+    margin: 2em auto 0 auto;
+    padding: 10px 0;
+}
+
+.section-treinos-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: top;
+    
+}
+
+.list-treinos h3,
+.list-dietas h3 {
+    border-bottom: 4px solid var(--yellow-500);
+    margin-bottom: 1em;
+    font-size: 22px;
+}
+
+.section-treinos-content ul {
+    list-style: none;
+    line-height: 1.7em;
+    font-size: 20px;
+}
+
+.section-treinos-content ul li svg {
+    margin-right: .5em;
+}
+
+.section-treinos-content img {
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: .6em .6em .5em rgba(240, 189, 5, 0.45);
+}
+
+.section-planos {
+    background-color: var(--gray-400);
+    border-bottom: 4px solid var(--yellow-500);
+}
+
+.section-planos-content {
+    max-width: 80%;
+    margin: 3em auto 0 auto;
+    padding: 10px 0;
+    border-radius: 4px;
+}
+
+.section-planos-content h2 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+
+.list-cards-planos {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-gap: 1.5em;
+    display: flex;
+    justify-content: space-around;
+    pointer-events: none;
+}
+
+.section-planos-atencao {
+    padding: 20px 10px;
+    max-width: 80%;
+    margin: 1em auto 0 auto;
+}
+
+.section-planos-atencao h3 {
+    color: var(--yellow-500);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px #202024;
+    margin-bottom: .5em;
+}
+
+.section-planos-atencao p {
+    line-height: 1.3em;
+    margin-bottom: .5em;
+    text-align: justify;
+}
+
+.section-galeria {
+    max-width: 80%;
+    margin: 3em auto 0 auto;
+}
+
+.galeria {
+    width: 100%;
+}
+
+.galeria img {
+    width: 260px;
+    height: 270px;
+    border: 2px solid var(--gray-200);
+    border-radius: 5px;
+    margin: 4px;
+    box-shadow: .2em .2em .3em rgba(0, 0, 0, 0.4);
+    /* transition: transform .3s; */
+    pointer-events: none;
+}
+
+/* .galeria img:hover {
+    transform: scale(1.2);
+}*/
+
+.section-contato {
+    background-color: var(--gray-400);
+    padding-bottom: 1em;
+}
+
+.section-contato-content {
+    max-width: 80%;
+    margin: 3em auto 1em auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-contato-content h2 {
+    padding-top: 1em;
+    text-align: center;
+    color: var(--gray-900);
+}
+
+.section-contato-content h3 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    color: var(--gray-900);
+    background-color:  var(--yellow-500);
+    border-radius: 5px;
+    padding: 5px 0;
+    margin-bottom: .7em;
+    width: 50%;
+    
+}
+
+
+.section-contato-content p {
+    text-align: center;
+    margin-top: .8em;
+    letter-spacing: .3em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* .list-contato {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1em;
+}
+
+
+
+ .section-contato-content ul li {
+    margin-right: 2em;
+    background-color: #F0BD05;
+    padding: 10px;
+    transition: transform .3s;
+}
+
+.section-contato-content ul li:hover  {
+    transform: scale(1.2);
+}
+
+.section-contato-content a {
+    color: var(--gray-800);
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.section-contato-content a svg {
+    width: 40px;
+    height: 40px;
+    margin-right: .5em;
+} */
+
+footer {
+    background-color: var(--gray-900);
+    margin-top: 0;
+    height: 7vh;
+    color: var(--gray-100);
+    display: flex;
+    align-items: center;
+    border-top: 4px solid var(--yellow-500);
+}
+
+.footer-content {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+/* 
+#################################
+#  MEDIA QUERY MAX-WIDTH 630PX  #
+#################################
+*/
+
+@media (max-width: 785px) {
+    .header-content nav {
+        display: flex;
+    }
+
+    .header-content-chamada {
+        top: 6.5em;
+    }
+
+    .list-cards {
+        grid-template-columns: repeat(2, 176px);
+        grid-gap: 2em;
+    }
+
+    .card:hover {
+        transform: scale(1.2);
+        transition: transform .4s;
+    }
+
+    .section-info-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 1.5em;
+    }
+
+    .section-info-content ul {
+        margin: 0 auto;
+        padding-left: 2.5em;
+        font-weight: bold;
+        text-shadow: 1px 2px #000000;
+    }
+
+    .section-info-content p {
+       border: 1px solid var(--yellow-400);
+    }
+
+    .section-treinos-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .list-dietas {
+        margin-top: 2em;
+    }
+
+    .list-cards-planos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-planos-atencao h3 {
+        font-size: 28px;
+        border-bottom: 2px solid var(--yellow-500);
+        padding-bottom: .2em;
+    }
+
+    .galeria {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-contato-content h3 {
+        width: 80%;
+    }
+}
+
+/* 
+#################################
+#  MEDIA QUERY MAX-WIDTH 500PX  #
+#################################
+*/
+
+@media (max-width: 500px) {
+
+    header {
+        height: 32em;
+    }
+
+    .section-info-content ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        border-radius: 10px;
+        width: 100%;
+        line-height: 2em;
+        font-size: 24px;
+        list-style: none;
+    }
+
+    .section-info-content ul li {
+        margin-left: 0;
+    }
+}
+
+/* 
+#################################
+#  MEDIA QUERY MAX-WIDTH 420PX  #
+#################################
+*/
+
+@media (max-width: 420px) {
+
+    header {
+        height: 35em;
+    }
+
+    .list-cards {
+        grid-template-columns: repeat(1, 270px);
+    }
+
+    .section-info {
+        height: 70vh;
+    }
+
+    .section-info-content ul {
+        font-size: 20px;
+    }
+
+    .section-info-content p {
+        padding: 6px;
+        margin-top: 1em;
+        font-size: 22px;
+    }
+
+    .list-treinos  ul li {
+        font-size: 19px;
+    }
+
+    .section-planos-atencao {
+        max-width: 90%;
+    }
+
+    .section-contato-content p {
+        letter-spacing: 1px;
+    }
+
+    .footer-content {
+        max-width: 90%;
+    }
+}
+
+
+/* 
+#################################
+#  MEDIA QUERY MAX-WIDTH 375PX  #
+#################################
+*/
+
+@media (max-width: 375px) {
+
+    header {
+        height: 34em;
+    }
+
+    .list-cards {
+        grid-template-columns: repeat(1, 270px);
+    }
+
+    .section-info {
+        height: 70vh;
+    }
+
+    .section-info-content ul {
+        font-size: 20px;
+    }
+
+    .section-info-content p {
+        padding: 6px;
+        margin-top: 1em;
+        font-size: 22px;
+    }
+
+    .list-treinos  ul li {
+        font-size: 19px;
+    }
+
+    .section-planos-atencao {
+        max-width: 90%;
+    }
+
+    .section-contato-content p {
+        letter-spacing: 1px;
+    }
+
+    .footer-content {
+        max-width: 90%;
+    }
+}
